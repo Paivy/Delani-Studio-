@@ -1,6 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .landing {
   background-image: url("../images/Backgrounds/h_img.jpg");
   background-position: center center;
@@ -10,6 +15,7 @@ html {
   text-align: center;
   padding-top: 17%;
   font-family: "Gabriela", serif;
+  height: 100vh;
 }
 .landing h1 {
   padding: 2px;
@@ -102,9 +108,17 @@ landing p {
 .what-we-do .headings {
   padding-bottom: 38px;
 }
+/* #portfolio > img {
+  object-fit: cover;
+  object-position: center;
+}
+#portfolio > #outlook {
+  position: absolute;
+  inset: 0;
+} */
 #portfolio {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   align-items: center;
   margin-left: 18%;
   margin-right: 16%;
@@ -186,7 +200,7 @@ footer p {
   font-size: 16px;
 }
 .card-header {
-  /* display: none; */
+  display: none;
 }
 
 #product .title,
@@ -195,8 +209,28 @@ footer p {
   font-size: 20px;
   font-weight: 600;
 }
+.col-md-3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-#outlook,
+.outlook-text {
+  display: none;
+}
+.text {
+  position: absolute;
+  background-color: rgba(223, 226, 226, 0.74);
+  margin-left: -20px;
+  margin-top: -20px;
+
+  /* display:flex; */
+  /* justify-content: center;
+align-items: center; */
+  /* top:0;
+  left:0; */
+}
+/* #outlook,
 #outlook2,
 #outlook3,
 #outlook4,
@@ -217,7 +251,7 @@ footer p {
   font-size: 30px;
   padding-top: 50%;
   font-family: "Delius Swash Caps", cursive;
-}
+} */
 
 @media only screen and (max-width: 755px) {
   #outlook,
@@ -236,7 +270,7 @@ footer p {
   }
   .col-md-3 img {
     width: 100%px;
-    margin: 20px;
+    /* margin: 20px; */
   }
   #portfolio {
     margin-left: 8%;
@@ -266,7 +300,7 @@ footer p {
   }
   .col-md-3 img {
     width: 100%px;
-    margin: 20px;
+    /* margin: 20px; */
   }
   #portfolio {
     margin-left: 8%;
@@ -308,7 +342,7 @@ footer p {
   }
   .col-md-3 img {
     width: 400px;
-    margin: 20px;
+    /* margin: 20px; */
   }
   #portfolio {
     margin-left: 10%;
@@ -333,7 +367,7 @@ footer p {
   }
   .col-md-3 img {
     width: 400px;
-    margin: 20px;
+    /* margin: 20px; */
   }
   #portfolio {
     margin-left: 6%;
