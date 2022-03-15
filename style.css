@@ -97,11 +97,6 @@ landing p {
   /* width: 30%; */
 }
 
-.service-card {
-  /* display: flex; */
-  /* justify-content: center  ; */
-}
-
 .service-card p {
   display: none;
 }
@@ -223,12 +218,6 @@ footer p {
   background-color: rgba(223, 226, 226, 0.74);
   margin-left: -20px;
   margin-top: -20px;
-
-  /* display:flex; */
-  /* justify-content: center;
-align-items: center; */
-  /* top:0;
-  left:0; */
 }
 /* #outlook,
 #outlook2,
