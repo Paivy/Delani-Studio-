@@ -7,5 +7,14 @@ $(document).ready(function () {
 
     // $('.card-image').toggle();
   });
+
+  // hover effect
+  $(".col-md-3").hover(
+    function () {
+      $(".outlook-text", this).show();
+    },
+    function () {
+      $(".outlook-text", this).hide();
+    }
+  );
 });
- 
